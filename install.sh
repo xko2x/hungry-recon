@@ -238,6 +238,7 @@ go get golang.org/x/oauth2
 go get github.com/miekg/dns
 go get github.com/anshumanbh/tko-subs
 go get github.com/haccer/subjack
+go get -u github.com/tomnomnom/anew
 go get github.com/zmap/zdns/zdns
 cd ~/tools
 go get -u github.com/rverton/webanalyze
