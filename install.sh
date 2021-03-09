@@ -262,6 +262,7 @@ pip2 install -r requirements2.txt
 cd ~/tools
 pip3 install truffleHog
 pip install py-altdns
+pip3 install dnsgen
 
 git clone https://github.com/defparam/smuggler.git
 
