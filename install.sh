@@ -235,6 +235,7 @@ go get github.com/google/go-github/github
 go get github.com/olekukonko/tablewriter
 go get golang.org/x/net/publicsuffix
 go get golang.org/x/oauth2
+go get -u github.com/tomnomnom/unfurl
 go get github.com/miekg/dns
 go get github.com/anshumanbh/tko-subs
 go get github.com/haccer/subjack
