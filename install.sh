@@ -244,6 +244,7 @@ go get github.com/zmap/zdns/zdns
 cd ~/tools
 go get -u github.com/rverton/webanalyze
 go get -u -v github.com/lc/gau
+go get -u github.com/tomnomnom/gf
 go get -u github.com/phspade/getching
 go get github.com/Emoe/kxss
 go get -u github.com/hahwul/dalfox
