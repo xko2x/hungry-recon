@@ -1,5 +1,5 @@
-#put all your domains in all.txt
+#bash domains.txt
 for i in $(cat $1); do
         filename=$(echo $i)
-        echo $i
+        bash ~/hungry-recon/sub2.sh $i
 done
