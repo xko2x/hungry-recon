@@ -21,7 +21,7 @@ if [ ! -f $1-assetfinder.txt ] && [ ! -z $(which assetfinder) ]; then
 	assetfinder -subs-only $1 > $1-assetfinder.txt
 	echo "[+] Assetfinder Found $assetfinderscan subdomains"
 else
-	echo "[!] Skipping ...."
+	echo "[!] Skipping ..."
 fi
 sleep 5
 
