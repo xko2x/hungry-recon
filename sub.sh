@@ -40,13 +40,13 @@ httpx -l $1-final.txt  -silent -threads 9000 -timeout 30 >> $1-live.txt
 #cat $1-final.txt | httprobe -c 100 >> $1-live.txt
 rm $1-final-uns.txt $1-oneforall.txt $1-findomain.txt $1-subfinder.txt $1-assetfinder.txt $1-certspotter.txt $1-certsh.txt
 
-PS3='all saved to alive.txt and final.txt do you want run dnsgen ? : '
+PS3="all saved to alive.txt and final.txt do you want run dnsgen ? : "
 options=("yes 1" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
-        "yes 1")
-            xargs -a $1-final.txt -I@ sh -c 'echo @' | dnsgen - | httpx -silent -threads 10000 | anew $1-live.txt
+        "Option 1")
+		    xargs -a $1-final.txt -I@ sh -c 'echo @' | dnsgen - | httpx -silent -threads 10000 | anew $1-live.txt
             echo "dnsgen done!"
             ;;
         "Quit")
@@ -55,3 +55,6 @@ do
         *) echo "invalid option $REPLY";;
     esac
 done
+
+
+
