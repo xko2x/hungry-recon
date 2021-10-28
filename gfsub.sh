@@ -8,7 +8,7 @@
 
 [ ! -f ~/gfpatterns ] && mkdir ~/gfpatterns  2&>1
 [ ! -f ~/gfpatterns/$1 ] && mkdir ~/gfpatterns/$1  2&>1
-[ ! -f ~/gfpatterns/1$/temp ] && mkdir ~/gfpatterns/$1/temp/  2&>1
+[ ! -f ~/gfpatterns/$1/temp ] && mkdir ~/gfpatterns/$1/temp/  2&>1
 
 
 cd ~/.gf
