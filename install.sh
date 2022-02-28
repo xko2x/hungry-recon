@@ -112,22 +112,6 @@ sudo pip install -r requirements.txt
 echo "done"
 
 
-echo "installing teh_s3_bucketeers"
-git clone https://github.com/tomdev/teh_s3_bucketeers.git
-cd ~/tools/
-echo "done"
-
-
-echo "installing wpscan"
-gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
-curl -sSL https://get.rvm.io | bash -s stable --ruby
-gem install nokogiri
-gem install wpscan
-cd ~/tools/
-echo "done"
-
-
 echo "installing ffuf"
 wget https://github.com/ffuf/ffuf/releases/download/v1.1.0/ffuf_1.1.0_linux_amd64.tar.gz
 tar -xvzf ffuf_1.1.0_linux_amd64.tar.gz
@@ -142,27 +126,8 @@ git clone https://github.com/maurosoria/dirsearch.git
 cd ~/tools/
 echo "done"
 
-
-echo "installing lazys3"
-git clone https://github.com/nahamsec/lazys3.git
-cd ~/tools/
-echo "done"
-
 echo "installing virtual host discovery"
 git clone https://github.com/jobertabma/virtual-host-discovery.git
-cd ~/tools/
-echo "done"
-
-
-echo "installing sqlmap"
-git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
-cd ~/tools/
-echo "done"
-
-echo "Expired Domain Take Overs"
-git clone https://github.com/JordyZomer/autoSubTakeover.git
-cd autoSubTakeover
-pip install -r requirements.txt
 cd ~/tools/
 echo "done"
 
@@ -175,17 +140,6 @@ git clone https://github.com/guelfoweb/knock.git
 cd ~/tools/
 echo "done"
 
-echo "installing lazyrecon"
-git clone https://github.com/soaringswine/lazyrecon_docker.git
-cd lazyrecon_docker
-docker build --rm -f "Dockerfile" -t lazyrecon_docker:latest .
-cd ~/tools/
-echo "done"
-
-echo "installing nmap"
-sudo apt-get install -y nmap
-echo "done"
-
 echo "installing asnlookup"
 git clone https://github.com/yassineaboukir/asnlookup.git
 cd ~/tools/asnlookup
@@ -195,22 +149,6 @@ echo "done"
 
 cd ~/trash/
 
-echo "installing httprobe"
-wget https://github.com/tomnomnom/httprobe/releases/download/v0.1.2/httprobe-linux-amd64-0.1.2.tgz
-tar -xvzf httprobe-linux-amd64-0.1.2.tgz
-cp httprobe /usr/local/bin
-chmod +x /usr/local/bin/httprobe
-echo "done"
-
-cd ~/tools/
-echo "installing unfurl"
-go get -u github.com/tomnomnom/unfurl 
-echo "done"
-
-echo "installing lazyrecon-docker"
-docker pull txt3rob/lazy-recon
-echo "done"
-
 echo "installing waybackurls"
 go get github.com/tomnomnom/waybackurls
 echo "done"
@@ -218,10 +156,6 @@ echo "done"
 echo "installing crtndstry"
 git clone https://github.com/nahamsec/crtndstry.git
 echo "done"
-
-echo "git-all-secerts"
-docker run --rm -it abhartiya/tools_gitallsecrets
-
 
 
 go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
@@ -235,10 +169,7 @@ go get github.com/google/go-github/github
 go get github.com/olekukonko/tablewriter
 go get golang.org/x/net/publicsuffix
 go get golang.org/x/oauth2
-go get -u github.com/tomnomnom/unfurl
 go get github.com/miekg/dns
-go get github.com/anshumanbh/tko-subs
-go get github.com/haccer/subjack
 go get -u github.com/tomnomnom/anew
 go get github.com/zmap/zdns/zdns
 cd ~/tools
@@ -289,16 +220,6 @@ python -m pip install -U pip setuptools wheel
 python3 -m pip install -r requirements.txt
 cd ~/tools/
 echo "done"
-
-
-echo "installing S3scanner"
-git clone https://github.com/sa7mon/S3Scanner.git
-cd ~/tools/S3Scanner/
-python -m pip install -U pip setuptools wheel
-python3 -m pip install -r requirements.txt
-cd ~/tools/
-echo "done"
-
 
 
 [ ! -f ~/tools/wordlists/ ] && mkdir ~/tools/wordlists/  2&>1
