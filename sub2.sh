@@ -1,7 +1,7 @@
 #SUB2: NO HTTPX AND ONEFORALL BRUTOFRCE OR DNSGEN
 echo "[+] FINDOMAIN SCANNING [+]"
-if [ ! -f $1-findomain.txt ] && [ ! -z $(which docker) ]; then
-	docker run -it edu4rdshl/findomain:latest -t $1 -q -u $1-findomain.txt
+if [ ! -f $1-findomain.txt ] && [ ! -z $(which findomain) ]; then
+	findomain -t $1 -q -u $1-findomain.txt
 	echo "[+] Findomain Found $findomainscan subdomains"
 else
 	echo "[!] Skipping ..."
