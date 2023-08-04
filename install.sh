@@ -72,17 +72,6 @@ wget https://raw.githubusercontent.com/xko2x/readyforhunt/master/.bash_profile
 source ~/.bash_profile
 echo "done"
 
-cd ~/trash/
-echo "Installing Golang"
-wget https://golang.org/dl/go1.15.linux-amd64.tar.gz
-sudo tar -xvf go1.15.linux-amd64.tar.gz
-sudo mv go /usr/local
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-cd ~/
-sudo mv go /usr/local
-source .bash_profile
 cd ~/tools/
 
 
